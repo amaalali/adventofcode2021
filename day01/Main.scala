@@ -11,8 +11,8 @@ object Main extends App {
     .map(_.toInt)
     .toSeq
 
-  val data_puzzle_input_two: Seq[Int] = data_puzzle_input_one
-
   println("Part one: " + one.run(data_puzzle_input_one))
+
+  val data_puzzle_input_two: Seq[Int] = data_puzzle_input_one
   println("Part two: " + two.run(data_puzzle_input_two))
 }
