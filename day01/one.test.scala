@@ -12,7 +12,6 @@ class OneSpec extends AnyFreeSpec {
     .getLines
     .map(_.toInt)
     .toSeq
-  // val data = Source.fromResource("data_test").getLines.map(_.toInt).toSeq
 
   "run" - {
     "counts the number of increases in depth measurements" in {
