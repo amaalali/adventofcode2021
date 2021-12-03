@@ -4,9 +4,7 @@ import scala.io.Source
 
 object Main extends App {
   val data_puzzle_input_one = Source
-    .fromFile(
-      "/Users/amaalali/code/adventofcode2021/day01/data_puzzle_input_one"
-    )
+    .fromResource("data_puzzle_input_one")
     .getLines
     .map(_.toInt)
     .toSeq

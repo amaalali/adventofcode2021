@@ -1,3 +1,4 @@
+// using resource "./data"
 // using lib org.scalatest::scalatest:3.2.10
 
 import scala.io.Source
@@ -7,7 +8,7 @@ import org.scalatest.matchers.must.Matchers._
 
 class OneSpec extends AnyFreeSpec {
   val testData = Source
-    .fromFile("/Users/amaalali/code/adventofcode2021/day02/data_test_one")
+    .fromResource("data_test_one")
     .getLines
     .toSeq
 
