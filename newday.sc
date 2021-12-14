@@ -6,7 +6,7 @@ import java.lang.IllegalArgumentException
 import java.lang.RuntimeException
 
 // Parse and validate input
-val validDayFormat = """(0[1-9]|1\d|2[0-5])""".r
+val validDayFormat = """^(0[1-9]|1\d|2[0-5])$""".r
 
 val validDayErrorMessage =
   "Day must be between 01 and 25 inclusive with leading 0."
