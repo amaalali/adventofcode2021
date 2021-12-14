@@ -44,6 +44,10 @@ if (!os.list(os.pwd).contains(templateSourceDir)) {
   )
 }
 
+// remove scala-cli folders and files from template folder if they exist
+os.remove.all(templateSourceDir / ".scala")
+os.remove.all(templateSourceDir / ".bsp")
+
 // Make directory
 val destinationDir = os.pwd / nameOfDay
 os.makeDir(destinationDir)
