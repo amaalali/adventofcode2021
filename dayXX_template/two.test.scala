@@ -7,16 +7,13 @@ import org.scalatest.freespec.AnyFreeSpec
 import org.scalatest.matchers.must.Matchers._
 
 class TwoSpec extends AnyFreeSpec {
-  val testData = Source
-    .fromResource("data_test_one")
-    .getLines
-    .toSeq
+  val testData = loadData.run("test_data")
 
-  // "run" - {
-  //   "" in {
-  //     val result = two.run(testData)
+  "run" - {
+    "test" in {
+      val result = two.run(testData)
 
-  //     result mustEqual 900
-  //   }
-  // }
+      result mustEqual -1
+    }
+  }
 }

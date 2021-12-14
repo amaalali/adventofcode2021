@@ -1,1 +1,1 @@
-def run(data: Seq[String]): Int = ???
+def run(data: loadData.Parsed): Int = ???

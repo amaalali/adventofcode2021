@@ -6,13 +6,11 @@ import scala.io.Source
 import org.scalatest.freespec.AnyFreeSpec
 import org.scalatest.matchers.must.Matchers._
 
-class OneSpec extends AnyFreeSpec {
-  val testData = loadData.run("test_data")
+class LoadDataSpec extends AnyFreeSpec {
 
-  "run" ignore {
-    "test" in {
-      val result = one.run(testData)
-      result mustEqual -1
+  "run" - {
+    "reads the test file and returns the parsed data" in {
+      loadData.run("test_data") mustEqual ???
     }
   }
 }
